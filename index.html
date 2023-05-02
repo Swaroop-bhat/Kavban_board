@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="kanban-board">
+      <div class="column" id="todo-column">
+        <h2>To Do</h2>
+        <div class="cards-container" id="todo-cards-container">
+          <div class="card" draggable="true">
+            Task1
+            <i class=""></i>
+          </div>
+        </div>
+        <div class="add-item-container">
+          <input type="text" placeholder="Add new task" id="add-item-input" />
+          <label>
+            <input type="radio" name="add-item-radio" value="todo" checked />
+            To Do
+          </label>
+          <label>
+            <input type="radio" name="add-item-radio" value="in-progress" />
+            In Progress
+          </label>
+          <label>
+            <input type="radio" name="add-item-radio" value="done" />
+            Done
+          </label>
+
+          <button type="button" id="add-item-button">Add</button>
+        </div>
+      </div>
+      <div class="column" id="in-progress-column">
+        <h2>In Progress</h2>
+        <div class="cards-container" id="in-progress-cards-container"></div>
+      </div>
+      <div class="column" id="done-column">
+        <h2>Done</h2>
+        <div class="cards-container" id="done-cards-container"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
